@@ -8,8 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+      body{
+        margin: 0px;
+        padding: 0px;;
+      }
         iframe{
+          padding: 0px;
+          margin: 0px;
            filter: invert(.9) saturate(0.5) hue-rotate(145deg);
+           height:100vh;
+           width:100wh;
         }
     </style>
     <script>
@@ -19,7 +27,7 @@
 </head>
 
 <body>
-    <iframe id="iframe" src="#" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no">
+    <iframe id="iframe" src="#" style="border-width:0" width="100%" height="100vh" frameborder="0" scrolling="no">
     </iframe><script>
   const iframe=document.getElementById('iframe');
   iframe.src=calendarURL;
